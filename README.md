@@ -27,7 +27,22 @@ Reffer this doc:- https://docs.aws.amazon.com/elasticloadbalancing/latest/classi
 Gateway Load Balancers allow you to deploy, scale, and manage virtual appliances, such as firewalls, intrusion detection and prevention systems, and deep packet inspection systems. It combines a transparent network gateway (that is, a single entry and exit point for all traffic) and distributes traffic while scaling your virtual appliances with the demand. A Gateway Load Balancer operates at the third layer of the Open Systems Interconnection (OSI) model, the network layer. It listens for all IP packets across all ports and forwards traffic to the target group that's specified in the listener rule. It maintains stickiness of flows to a specific target appliance using 5-tuple (for TCP/UDP flows) or 3-tuple (for non-TCP/UDP flows). The Gateway Load Balancer and its registered virtual appliance instances exchange application traffic using the GENEVE protocol on port 6081. It supports a maximum transmission unit (MTU) size of 8500 bytes. Gateway Load Balancers use Gateway Load Balancer endpoints to securely exchange traffic across VPC boundaries. A Gateway Load Balancer endpoint is a VPC endpoint that provides private connectivity between virtual appliances in the service provider VPC and application servers in the service consumer VPC. <br>
 Reffer this doc:- https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/introduction.html
 
-## Steps to be followed :- 
+# Steps to be followed :- 
 
-## S
+## Step1 Create a Target Groups
+Go to EC2 Scroll down there option called Target Group
+![image](https://user-images.githubusercontent.com/63963025/169863345-3c07387e-466d-4e68-8ec0-0f1b50a82993.png)
+- Create target group
+![image](https://user-images.githubusercontent.com/63963025/169863484-ba88af11-a458-4bd1-9b7f-75ce25ef2a74.png)
+- Fill the details <br>
+- <b>Target group name</b>: Target-ec2
+- <b>Protocol</b>: HTTP
+- <b>Port</b>: 80
+- <b>VPC</b>: default
+- <b>Protocol version</b>: HTTP1
+![image](https://user-images.githubusercontent.com/63963025/169865233-d87d9ff4-c609-4449-8c68-cd24a0469bf0.png)
+- Health Checks 
+- <b>Health Check protocol</b>: HTTP
+- <b>Health Check path</b>: /
+![image](https://user-images.githubusercontent.com/63963025/169865579-bc2c668b-f70e-4a40-a24b-714f8d9055f8.png)
 
