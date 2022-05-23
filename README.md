@@ -46,5 +46,6 @@ Go to EC2 Scroll down there option called Target Group
 - <b>Health Check path</b>: /index.html
 ![image](https://user-images.githubusercontent.com/63963025/169865823-5210f82d-c627-47cb-90e1-80e96ea07f8a.png)
 
-
+## Step2 Create a Ec2 instance 
+Go to Ec2 console 
 
