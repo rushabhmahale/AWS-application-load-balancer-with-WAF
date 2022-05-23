@@ -41,8 +41,10 @@ Go to EC2 Scroll down there option called Target Group
 - <b>VPC</b>: default
 - <b>Protocol version</b>: HTTP1
 ![image](https://user-images.githubusercontent.com/63963025/169865233-d87d9ff4-c609-4449-8c68-cd24a0469bf0.png)
-- Health Checks 
+- <b>Health Checks</b> 
 - <b>Health Check protocol</b>: HTTP
-- <b>Health Check path</b>: /
-![image](https://user-images.githubusercontent.com/63963025/169865579-bc2c668b-f70e-4a40-a24b-714f8d9055f8.png)
+- <b>Health Check path</b>: /index.html
+![image](https://user-images.githubusercontent.com/63963025/169865823-5210f82d-c627-47cb-90e1-80e96ea07f8a.png)
+
+
 
