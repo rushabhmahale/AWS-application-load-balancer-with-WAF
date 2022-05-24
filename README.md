@@ -66,6 +66,9 @@ Go to Ec2 console
 ![image](https://user-images.githubusercontent.com/63963025/170085452-6a3f7a30-2e94-4e42-8dfc-b25a9707545d.png)
 - Create same 3-EC2 instance here change User data  <b>web3</b>
 ![image](https://user-images.githubusercontent.com/63963025/170086310-6b97df5a-06c6-4efd-80a3-f5e481a9748f.png)
+- here we have Created 3 instance
+![image](https://user-images.githubusercontent.com/63963025/170087050-38202463-48a7-4ed3-a447-2898b9ddbb5f.png)
+
 
 ## Step3 Create a Application Loadbalancer 
 ![image](https://user-images.githubusercontent.com/63963025/170063881-02defe7e-6d50-4754-9cb1-3ee3f53a8590.png)
@@ -92,4 +95,8 @@ Go to Ec2 console
 - Your loadbalancer is created Successfully 
 ![image](https://user-images.githubusercontent.com/63963025/170083487-9dca2601-0551-4705-90ca-9e689f612fec.png)
 
- 
+## Attach Instance in Target Group 
+![image](https://user-images.githubusercontent.com/63963025/170087571-d8ec863d-ec02-48de-b066-42876bf5398c.png)
+- Select Target-ec2--> In targets--> Register targets <b>select all 3 ec2 instance</b> 
+![image](https://user-images.githubusercontent.com/63963025/170088460-d25c251d-0278-46dc-9f4e-b0c9e812e3d0.png)
+
