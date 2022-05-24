@@ -147,5 +147,33 @@ Refer to this doc:- https://aws.amazon.com/firewall-manager/
 - review and create web ACL
 ![image](https://user-images.githubusercontent.com/63963025/170104153-d7522e8c-cb38-4bd4-8440-b6256c1f0136.png)
 
+- Web ACL is created 
+ ![image](https://user-images.githubusercontent.com/63963025/170104721-7c44f4bc-ca9b-4115-a9f4-18f65cea5774.png)
+- Select webACL--> Associated AWS resources --> Add AWS resources 
+![image](https://user-images.githubusercontent.com/63963025/170104855-71892c0e-ae4a-45db-90ad-a1307d328476.png)
+- Application loadbalancer --> web-loadbalancer
+![image](https://user-images.githubusercontent.com/63963025/170105083-91335dc7-7ade-46c3-a466-e18026d79ee5.png)
+ 
+- Go to EC2--> Loadbalancer --> Copy DNS and paste to your browser 
+![image](https://user-images.githubusercontent.com/63963025/170105305-2b4b5597-1f10-4f0b-8407-15ab3ae4d0e1.png)
 
+- you should see <b>403 forbidden</b>  Because of <b>WAF</b> 
+## What is WAF
+AWS WAF is a web application firewall that helps protect your web applications or APIs against common web exploits and bots that may affect availability, compromise security, or consume excessive resources. AWS WAF gives you control over how traffic reaches your applications by enabling you to create security rules that control bot traffic and block common attack patterns, such as SQL injection or cross-site scripting. 
+Reffer to this doc:- https://aws.amazon.com/waf/#:~:text=AWS%20WAF%20is%20a%20web,security%2C%20or%20consume%20excessive%20resources.
+
+![image](https://user-images.githubusercontent.com/63963025/170105477-95505c19-972e-4c71-92d1-67f2748f0aba.png)
+
+- lets use VPN and verrify our WAF is working or not in my case i am using psiphon you can use any VPN (Virtual private network)
+## What is VPN 
+A VPN hides your IP address by letting the network redirect it through a specially configured remote server run by a VPN host. This means that if you surf online with a VPN, the VPN server becomes the source of your data. This means your Internet Service Provider (ISP) and other third parties cannot see which websites you visit or what data you send and receive online. A VPN works like a filter that turns all your data into "gibberish". Even if someone were to get their hands on your data, it would be useless.
+reffer to this doc:- https://www.kaspersky.com/resource-center/definitions/what-is-a-vpn
+
+- VPN is been connected 
+![image](https://user-images.githubusercontent.com/63963025/170106200-3152106c-4c79-4fd9-aaac-ef2b8781c5e1.png)
+
+![image](https://user-images.githubusercontent.com/63963025/170106340-2825594c-13c0-41ed-acbd-8fb0cb9c53b8.png)
+
+- here we are succesfully running your Loadbalancer with using WAF 
+![psiphon-with-WAF](https://user-images.githubusercontent.com/63963025/170106987-06b8f4b1-420b-45a0-a639-595cf5ec8c41.gif)
 
