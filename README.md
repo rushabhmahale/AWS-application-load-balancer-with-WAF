@@ -48,4 +48,11 @@ Go to EC2 Scroll down there option called Target Group
 
 ## Step2 Create a Ec2 instance 
 Go to Ec2 console 
-
+![image](https://user-images.githubusercontent.com/63963025/170025426-9279a4e8-9fe3-448a-9465-7dfee0263aeb.png)
+- <b>Name</b>:web1
+- <b>Application and OS Images (Amazon Machine Image)</b>:Amazon Machine Image (AMI)
+![image](https://user-images.githubusercontent.com/63963025/170025728-2367d8b3-5d24-407f-9af0-0c2548ec0569.png)
+- <b>Instance type</b>:Instance type t2.micro
+- <b>Key pair (login) </b>: create a new key or you can select existing key in my case i am using exsiting key <br>
+![image](https://user-images.githubusercontent.com/63963025/170026856-6ed0aaa8-1984-4530-8576-bb18fdaf60c4.png)
+- 
