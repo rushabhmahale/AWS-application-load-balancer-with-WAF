@@ -69,7 +69,6 @@ Go to Ec2 console
 - here we have Created 3 instance
 ![image](https://user-images.githubusercontent.com/63963025/170087050-38202463-48a7-4ed3-a447-2898b9ddbb5f.png)
 
-
 ## Step3 Create a Application Loadbalancer 
 ![image](https://user-images.githubusercontent.com/63963025/170063881-02defe7e-6d50-4754-9cb1-3ee3f53a8590.png)
 - Create a Loadbalancer Select Application loadbalancer  
@@ -99,4 +98,6 @@ Go to Ec2 console
 ![image](https://user-images.githubusercontent.com/63963025/170087571-d8ec863d-ec02-48de-b066-42876bf5398c.png)
 - Select Target-ec2--> In targets--> Register targets <b>select all 3 ec2 instance</b> 
 ![image](https://user-images.githubusercontent.com/63963025/170088460-d25c251d-0278-46dc-9f4e-b0c9e812e3d0.png)
+- include as pending below register pending targets 
+![image](https://user-images.githubusercontent.com/63963025/170090648-36995356-dc3c-4f8e-9164-48c869fa8e6a.png)
 
