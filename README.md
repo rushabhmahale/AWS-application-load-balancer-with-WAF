@@ -101,3 +101,23 @@ Go to Ec2 console
 - include as pending below register pending targets 
 ![image](https://user-images.githubusercontent.com/63963025/170090648-36995356-dc3c-4f8e-9164-48c869fa8e6a.png)
 
+- This will take some time to initialize your instance 
+![image](https://user-images.githubusercontent.com/63963025/170091232-a1f7d9be-3cd4-4973-bf1b-81705b11cf8d.png)
+ 
+- Now copy your Loadbalancer DNS name and paste into your browser 
+![image](https://user-images.githubusercontent.com/63963025/170093085-a217b25a-663c-4790-a266-6b9c812912de.png)
+
+- Now you will see that your application traffic is been split in different instance 
+![Aws-application-loadbalancer](https://user-images.githubusercontent.com/63963025/170094886-48468f34-4606-446c-8026-9eca009c7f16.gif)
+
+## Creating WAF and whitelisting your ip adress 
+- Go to AWS Firewall Manager 
+AWS Firewall Manager:-
+AWS Firewall Manager is a security management service which allows you to centrally configure and manage firewall rules across your accounts and applications in AWS Organizations. As new applications are created, Firewall Manager makes it easy to bring new applications and resources into compliance by enforcing a common set of security rules. Now you have a single service to build firewall rules, create security policies, and enforce them in a consistent, hierarchical manner across your entire infrastructure, from a central administrator account.<br>
+Refer to this doc:- https://aws.amazon.com/firewall-manager/
+
+![image](https://user-images.githubusercontent.com/63963025/170096520-4f3bedce-59cf-4841-86ba-9cc8b3c7c1cf.png)
+
+- Go to IP sets--> create ip sets 
+ ![image](https://user-images.githubusercontent.com/63963025/170097238-1c90d761-828f-426d-bed9-ff66fd91ea68.png)
+- Now go to google.com and search for <>
