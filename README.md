@@ -55,4 +55,9 @@ Go to Ec2 console
 - <b>Instance type</b>:Instance type t2.micro
 - <b>Key pair (login) </b>: create a new key or you can select existing key in my case i am using exsiting key <br>
 ![image](https://user-images.githubusercontent.com/63963025/170026856-6ed0aaa8-1984-4530-8576-bb18fdaf60c4.png)
-- 
+- In network setting select <b>Allow HTTPs traffic from the internet</b> & <b>Allow HTTP traffic from the internet</b>  
+ ![image](https://user-images.githubusercontent.com/63963025/170035261-cad15e94-2553-49db-bbc4-5a092522833c.png)
+- Configure storage
+ ![image](https://user-images.githubusercontent.com/63963025/170035861-9608088a-2cd9-4583-af22-077d84373258.png)
+- In Advanced details scroll dow n there is option call User data 
+
