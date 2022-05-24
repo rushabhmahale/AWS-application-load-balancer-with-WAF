@@ -110,14 +110,42 @@ Go to Ec2 console
 - Now you will see that your application traffic is been split in different instance 
 ![Aws-application-loadbalancer](https://user-images.githubusercontent.com/63963025/170094886-48468f34-4606-446c-8026-9eca009c7f16.gif)
 
-## Creating WAF and whitelisting your ip adress 
+## Creating Ipset
 - Go to AWS Firewall Manager 
-AWS Firewall Manager:-
-AWS Firewall Manager is a security management service which allows you to centrally configure and manage firewall rules across your accounts and applications in AWS Organizations. As new applications are created, Firewall Manager makes it easy to bring new applications and resources into compliance by enforcing a common set of security rules. Now you have a single service to build firewall rules, create security policies, and enforce them in a consistent, hierarchical manner across your entire infrastructure, from a central administrator account.<br>
-Refer to this doc:- https://aws.amazon.com/firewall-manager/
-
 ![image](https://user-images.githubusercontent.com/63963025/170096520-4f3bedce-59cf-4841-86ba-9cc8b3c7c1cf.png)
 
 - Go to IP sets--> create ip sets 
  ![image](https://user-images.githubusercontent.com/63963025/170097238-1c90d761-828f-426d-bed9-ff66fd91ea68.png)
-- Now go to google.com and search for <>
+- Now go to google.com and search for <b>Whats my ip</b>
+![image](https://user-images.githubusercontent.com/63963025/170101635-451a43f3-c5d1-452e-86a3-98c7a9e4254c.png)
+- <b>Ip set details</b>
+- <b>Ip set name</b>: Demoipset
+- <b>Region</b>: ap-south-1 (mumbai)
+- <b>Ipv4</b>:<your ip/32>
+![image](https://user-images.githubusercontent.com/63963025/170102424-1aefc95a-1245-48fa-88da-f434cb25c110.png)
+- Demo ip is been created 
+![image](https://user-images.githubusercontent.com/63963025/170102475-2dbe64e3-ae38-4e28-9f2f-f57055eb94cb.png)
+
+## Creating WAF and whitelisting your ip adress 
+AWS Firewall Manager:-
+AWS Firewall Manager is a security management service which allows you to centrally configure and manage firewall rules across your accounts and applications in AWS Organizations. As new applications are created, Firewall Manager makes it easy to bring new applications and resources into compliance by enforcing a common set of security rules. Now you have a single service to build firewall rules, create security policies, and enforce them in a consistent, hierarchical manner across your entire infrastructure, from a central administrator account.<br>
+Refer to this doc:- https://aws.amazon.com/firewall-manager/
+
+- Create web ACL
+![image](https://user-images.githubusercontent.com/63963025/170102824-ab11f12d-9478-47e5-8e1d-53eb1773a594.png)
+![image](https://user-images.githubusercontent.com/63963025/170103114-b29160a6-6b00-4deb-824f-9812b7d2238a.png)
+- Add AWS resource 
+![image](https://user-images.githubusercontent.com/63963025/170103301-e588fdff-ca18-468d-a0a9-83757ce36706.png)
+![image](https://user-images.githubusercontent.com/63963025/170103318-aba2618c-c0b4-4568-9b40-df7b63601595.png)
+- Next <b> Add rules</b>--> Add my own rules and rule groups --> IPset
+![image](https://user-images.githubusercontent.com/63963025/170103766-2f1853fa-0da8-4c01-8e5e-523cba57f0e6.png)
+![image](https://user-images.githubusercontent.com/63963025/170103777-345426e5-3273-4514-b962-77660f9123f1.png)
+- Add rule all default ---> default
+![image](https://user-images.githubusercontent.com/63963025/170103960-6d5152e5-472b-4f10-9700-8aa0b5a9ba6e.png)
+![image](https://user-images.githubusercontent.com/63963025/170104012-440e39af-c8b9-4212-823f-859749e1ae66.png)
+![image](https://user-images.githubusercontent.com/63963025/170104038-2169d3c4-41c3-485a-b3ff-9c9b7e6e99e7.png)
+- review and create web ACL
+![image](https://user-images.githubusercontent.com/63963025/170104153-d7522e8c-cb38-4bd4-8440-b6256c1f0136.png)
+
+
+
