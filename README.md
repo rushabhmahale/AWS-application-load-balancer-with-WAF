@@ -59,5 +59,9 @@ Go to Ec2 console
  ![image](https://user-images.githubusercontent.com/63963025/170035261-cad15e94-2553-49db-bbc4-5a092522833c.png)
 - Configure storage
  ![image](https://user-images.githubusercontent.com/63963025/170035861-9608088a-2cd9-4583-af22-077d84373258.png)
-- In Advanced details scroll dow n there is option call User data 
+- In Advanced details scroll dow n there is option call User data  
+![image](https://user-images.githubusercontent.com/63963025/170061615-2c4b86e1-5328-47b7-ab0a-0721f1574cd4.png)
+## Step3 Create a Application Loadbalancer 
+![image](https://user-images.githubusercontent.com/63963025/170063881-02defe7e-6d50-4754-9cb1-3ee3f53a8590.png)
+- Create a Loadbalancer Select Application loadbalancer  
 
