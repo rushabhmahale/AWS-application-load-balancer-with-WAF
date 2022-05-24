@@ -61,7 +61,35 @@ Go to Ec2 console
  ![image](https://user-images.githubusercontent.com/63963025/170035861-9608088a-2cd9-4583-af22-077d84373258.png)
 - In Advanced details scroll dow n there is option call User data  
 ![image](https://user-images.githubusercontent.com/63963025/170061615-2c4b86e1-5328-47b7-ab0a-0721f1574cd4.png)
+## Similarly Create 3 more Ec2 instance 
+- This time change the User data 
+![image](https://user-images.githubusercontent.com/63963025/170085452-6a3f7a30-2e94-4e42-8dfc-b25a9707545d.png)
+- Create same 3-EC2 instance here change User data  <b>web3</b>
+![image](https://user-images.githubusercontent.com/63963025/170086310-6b97df5a-06c6-4efd-80a3-f5e481a9748f.png)
+
 ## Step3 Create a Application Loadbalancer 
 ![image](https://user-images.githubusercontent.com/63963025/170063881-02defe7e-6d50-4754-9cb1-3ee3f53a8590.png)
 - Create a Loadbalancer Select Application loadbalancer  
+![image](https://user-images.githubusercontent.com/63963025/170078120-83fe780f-20ad-48aa-bed7-eeb21fe2ad8c.png)
+![image](https://user-images.githubusercontent.com/63963025/170078519-346d233f-ddb6-4300-8c6b-1846917064ec.png)
+- <b>Fill the details</b>
+- <b>Load balancer name</b>:web-loadbalancer
+- <b>Scheme</b>:Internet-facing
+- <b>Ip address type</b>: IPv4
+![image](https://user-images.githubusercontent.com/63963025/170079352-0c0d5e95-8342-4d7c-9868-7f6e7f4bec1b.png)
+- <b>Networking mapping</b>
+- <b>VPC</b>: default VPC
+- Select all subnet <b> ap-south-1a, ap-south-1b, ap-south-1c</b>
+![image](https://user-images.githubusercontent.com/63963025/170080147-5dcb37a6-bb84-443e-b3e4-f04c5238a732.png)
+- <b>Security Groups</b>
+- <b>Security Groups</b>: default 
+![image](https://user-images.githubusercontent.com/63963025/170080281-95e87ef9-e194-4f64-a9ac-0e81b2302a48.png)
+- <b> Listener and routing </b>
+- <b> HTTP</b>:80
+![image](https://user-images.githubusercontent.com/63963025/170081112-3f205a62-2b82-406f-888d-60cc2945bb28.png)
+- summary 
+![image](https://user-images.githubusercontent.com/63963025/170080992-c9b87e56-e06f-4a39-9e15-3e1a70e52996.png)
+- Your loadbalancer is created Successfully 
+![image](https://user-images.githubusercontent.com/63963025/170083487-9dca2601-0551-4705-90ca-9e689f612fec.png)
 
+ 
