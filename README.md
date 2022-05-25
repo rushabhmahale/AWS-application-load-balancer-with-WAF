@@ -166,14 +166,15 @@ Reffer to this doc:- https://aws.amazon.com/waf/#:~:text=AWS%20WAF%20is%20a%20we
 
 - lets use VPN and verrify our WAF is working or not in my case i am using psiphon you can use any VPN (Virtual private network)
 ## What is VPN 
-A VPN hides your IP address by letting the network redirect it through a specially configured remote server run by a VPN host. This means that if you surf online with a VPN, the VPN server becomes the source of your data. This means your Internet Service Provider (ISP) and other third parties cannot see which websites you visit or what data you send and receive online. A VPN works like a filter that turns all your data into "gibberish". Even if someone were to get their hands on your data, it would be useless.
-reffer to this doc:- https://www.kaspersky.com/resource-center/definitions/what-is-a-vpn
+A VPN hides your IP address by letting the network redirect it through a specially configured remote server run by a VPN host. This means that if you surf online with a VPN, the VPN server becomes the source of your data. This means your Internet Service Provider (ISP) and other third parties cannot see which websites you visit or what data you send and receive online. A VPN works like a filter that turns all your data into "gibberish". Even if someone were to get their hands on your data, it would be useless.<br>
+reffer to this doc:- https://www.kaspersky.com/resource-center/definitions/what-is-a-vpn <br>
+Download psiphon:- https://psiphon.ca/en/download.html
 
 - VPN is been connected 
 ![image](https://user-images.githubusercontent.com/63963025/170106200-3152106c-4c79-4fd9-aaac-ef2b8781c5e1.png)
 
 ![image](https://user-images.githubusercontent.com/63963025/170106340-2825594c-13c0-41ed-acbd-8fb0cb9c53b8.png)
 
-- here we are succesfully running your Loadbalancer with using WAF 
+- Here we are succesfully running your Loadbalancer with using WAF 
 ![psiphon-with-WAF](https://user-images.githubusercontent.com/63963025/170106987-06b8f4b1-420b-45a0-a639-595cf5ec8c41.gif)
 
