@@ -127,7 +127,8 @@ Go to Ec2 console
 ![image](https://user-images.githubusercontent.com/63963025/170102475-2dbe64e3-ae38-4e28-9f2f-f57055eb94cb.png)
 
 ## Creating WAF and whitelisting your ip adress 
-AWS Firewall Manager:-
+
+## What is AWS Firewall Manager:-
 AWS Firewall Manager is a security management service which allows you to centrally configure and manage firewall rules across your accounts and applications in AWS Organizations. As new applications are created, Firewall Manager makes it easy to bring new applications and resources into compliance by enforcing a common set of security rules. Now you have a single service to build firewall rules, create security policies, and enforce them in a consistent, hierarchical manner across your entire infrastructure, from a central administrator account.<br>
 Refer to this doc:- https://aws.amazon.com/firewall-manager/
 
