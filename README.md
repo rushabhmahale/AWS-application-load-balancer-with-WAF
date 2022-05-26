@@ -5,6 +5,9 @@ Elastic Load Balancing automatically distributes your incoming traffic across mu
 ![FastSilverJay-max-1mb](https://user-images.githubusercontent.com/63963025/169843771-d86cfb8f-56aa-41e4-988e-4b7932e6c863.gif)
 
 Reffer this doc:- https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/
+## Architecture diagram
+![waf application lb](https://user-images.githubusercontent.com/63963025/170513049-59471d6f-f393-4d8e-a142-1e87bd956799.png)
+
 ## Types of loadbalancer in AWS
 - Application Load Balancer
 - Network Load Balancer
